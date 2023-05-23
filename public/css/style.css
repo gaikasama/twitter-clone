@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+    outline: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* line-height: 25px; */
+    --white: #ffffff;
+    --orange: #f48c06;
+    --blue: #1d9bf0;
+    --black: #0F1419;
+    --error: #f4212e;
+    --light-red: rgba(244,33,46,0.1);
+    --light-gray: #536471;
+    --super-light-gray: #efefef;
+    color: var(--black);
+    --bs-modal-width: 600px;
+    /* --bs-gutter-x: 0px!important; */
+    --bs-list-group-border-width: 0px !important;
+    --bs-list-group-border-radius: 0px !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+input:focus>label {
+    color: var(--blue);
+}
+
+
+h1 {
+    font-size: 31px !important;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover{
+   color: var(--black);
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/* ------------------------------------------
+   COLOR CLASSES
+   Used to Adjust bootstrap color palette
+   ------------------------------------------ */
+
+/* blue */
+.color--blue {
+    color: var(--blue);
+}
+
+.fill--blue {
+    fill: var(--blue);
+}
+
+.background--blue {
+    background-color: var(--blue);
+}
+
+.border--blue {
+    border-color: var(--blue);
+}
+
+.border--focus-blue:focus{
+    border-color: var(--blue);
+
+}
+
+.text--blue {
+    color: var(--blue);
+}
+
+/* black */
+
+.color--black {
+    color: var(--black);
+}
+
+.fill--black {
+    fill: var(--black);
+}
+
+.background--black {
+    background-color: var(--black);
+}
+
+.border--black {
+    border-color: var(--black);
+}
+
+/* light gray */
+
+.text--gray,
+.text--gray:hover {
+    color: var(--light-gray);
+}
+
+
+.fill--gray {
+    fill: var(--light-gray);
+}
+
+/* super light gray */
+
+.background--super-light-gray{
+    background-color: var(--super-light-gray);
+}
+
+.border--super-light-gray{
+    border-color: var(--super-light-gray);
+}
+/* .background--super-light-gray:focus{
+    background-color: var(--super-light-gray);
+} */
+
+.hover--gray:hover{
+    background-color: var(--super-light-gray);
+}
+
+/* repost green */
+.text--green {
+    color: #00ba7c;
+}
+
+.fill--green {
+    fill: #00ba7c;
+}
+
+/* like pink */
+
+.text--pink {
+    color: #f91880;
+}
+
+.fill--pink {
+    fill: #f91880;
+}
+
+/* white */
+.color--white{
+    color: var(--white);
+}
+
+.background--white{
+    background-color: var(--white);
+}
+
+.fill--white{
+    fill: var(--white);
+}
+
+
+/* red */
+.border--red{
+    border-color: var(--error); 
+}
+
+/* ------------------------------------------
+   
+   ------------------------------------------ */
+
+.registration {
+    background-image: url(../assets/img/registration_bkg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.height--xl {
+    height: calc(100vh - 50px);
+}
+
+.height--xxl {
+    height: 100vh;
+}
+
+.width--tweet-content{
+    width: calc(100% - 70px);
+}
+
+.width--tweet-img{
+    width: 48px;
+}
+
+.width--max-content{
+    width: max-content;
+}
+
+.scrollbar--none {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.scrollbar--none::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow--scroll {
+    overflow-y: scroll;
+
+}
+
+.position--sticky{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.bottom--negative{
+    bottom: -100px;
+}
+
+.footer {
+    height: 50px;
+}
+
+.pointer--cursor {
+    cursor: pointer;
+}
+
+.z--index{
+    z-index: 100;
+}
+
+/* ------------------------------------------
+   MODAL
+   ------------------------------------------ */
+
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    margin: 0;
+}
+
+/* ------------------------------------------
+   DECORATIONS
+   ------------------------------------------ */
+
+.border--left-right {
+    border-right: 1px solid var(--super-light-gray);
+    border-left: 1px solid var(--super-light-gray);
+}
+
+.border--top-bottom {
+    border-top: 1px solid var(--super-light-gray);
+    border-bottom: 1px solid var(--super-light-gray);
+}
+
+.border--none {
+    border: none;
+}
+
+.dot {
+    height: 48px;
+    width: 48px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.dot--s{
+    height: 30px;
+    width: 30px;
+}
+
+
+/* ------------------------------------------
+   TEXT
+   ------------------------------------------ */
+
+.text--xxl {
+    font-size: 64px;
+    line-height: 84px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    overflow-wrap: break-word;
+}
+
+.text--xl {
+    font-size: 31px;
+    line-height: 36px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+.text--xxs {
+    font-size: 11px;
+}
+
+
+.text--xs {
+    font-size: 13px;
+}
+
+.text--s {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+    .text--xxl {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .text--xl {
+        font-size: 23px;
+        line-height: 28px;
+    }
+}
+
+/* ------------------------------------------
+   CIRCLE PROGRESS BAR
+   ------------------------------------------ */
+
+   .track {
+    stroke-width: 2;
+    stroke: lightgrey;
+    fill: none;
+}
+
+.progress {
+    stroke-width: 2;
+    stroke: var(--blue);
+    stroke-linecap: round;
+    fill: none;
+    transform: rotate(270deg);
+    transform-origin: center;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+}
+
+/* ------------------------------------------
+   OPACITY
+   ------------------------------------------ */
+
+.opacity--strong{
+    opacity: 0.9;
+}
+
+
+/* [contenteditable=true]:empty::before {
+    content: attr(placeholder);
+    color:grey;
+    font-style:italic;
+  } */
+
+
+  .tweetContent{
+      min-height: 58px;
+  }
+
+  .overflow--hidden{
+      overflow: hidden;
+  }
+
+  .image-width--m{
+    width: 48%;
+  }
+
+
+
+
+.form--error{
+    color: var(--error);
+    font-size: 13px;
+}
+
+.new--dot{
+    height: 72px;
+    width: 72px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.new--dot::after{
+    width: 80px;
+    height: 80px;
+    background-color: var(--white);
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#unfollowBtn{
+    width: 102px;
+}
+
+#unfollowBtn::after{
+    font-weight: bold;
+    content: "Following";
+}
+#unfollowBtn:hover{
+    background-color: var(--light-red);
+    border-color: var(--error)!important;
+}
+
+#unfollowBtn:hover::after{
+    color: var(--error);
+    content: "Unfollow";
+}
+
+.img--wrap{
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
